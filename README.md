@@ -115,7 +115,7 @@ one | uniq); done
 > @andirrahmani1
 
 ```bash
-export host="domain.com" ; curl -s "https://rapiddns.io/subdomain/$host?full=1#result" | grep -e "<td>.*$host</td>" | grep -oP '(?<=<td>)[^<]+' | sort -u
+export host="HOST" ; curl -s "https://rapiddns.io/subdomain/$host?full=1#result" | grep -e "<td>.*$host</td>" | grep -oP '(?<=<td>)[^<]+' | sort -u
 ```
 
 ### Get Subdomains from BufferOver.run
